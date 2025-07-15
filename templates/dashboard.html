@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chef Carthy AI Trading Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0e1013;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #12141a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #00e5ff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1c1f26;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #00e5ff;
+        }
+
+        .chart {
+            text-align: center;
+        }
+
+        .chart img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .insight-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #242830;
+            border-left: 4px solid #00e5ff;
+            border-radius: 10px;
+        }
+
+        .insight-box pre {
+            white-space: pre-wrap;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #d6e1e9;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons form {
+            display: inline;
+        }
+
+        button {
+            background-color: #00e5ff;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #00b3cc;
+        }
+
+        footer {
+            text-align: center;
+            color: #888;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📈 AI Trading Dashboard</h1>
+    <form action="/logout" method="GET">
+        <button>Logout</button>
+    </form>
+</header>
+
+<div class="container">
+    <h2>📊 Profit Overview</h2>
+    <div class="chart">
+        <img src="{{ chart_path }}" alt="Profit Chart">
+    </div>
+
+    <h2>🤖 Latest AI Signal</h2>
+    <div class="insight-box">
+        {% if ai_insight %}
+            <pre>{{ ai_insight }}</pre>
+        {% else %}
+            <pre>No signal yet. Press "Start Bot" to run analysis.</pre>
+        {% endif %}
+    </div>
+
+    <div class="buttons">
+        <form action="/start" method="POST">
+            <button type="submit">🚀 Start Bot</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    Built by MAccarthy Quest — Smart Trading Assistant
+</footer>
+
+</body>
+</html>
