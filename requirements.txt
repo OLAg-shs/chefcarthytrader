@@ -1,8 +1,11 @@
 flask
-python-dotenv
-requests
+flask-login
 matplotlib
 pandas
 ta
+python-dotenv
+requests
 groq
+schedule
 email-validator
+gunicorn
