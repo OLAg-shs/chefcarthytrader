@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Chef_carthy</title>
+    <title>Register - Chef_carthy</title>
     <style>
         body {
             background: #101214;
@@ -11,7 +11,7 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
         }
-        .login-container {
+        .register-container {
             max-width: 400px;
             margin: 80px auto 0 auto;
             background: #181a1b;
@@ -63,7 +63,7 @@
         button:hover {
             background: #00ff88;
         }
-        .register-link {
+        .login-link {
             display: block;
             text-align: center;
             margin-top: 18px;
@@ -71,7 +71,7 @@
             text-decoration: none;
             font-weight: 600;
         }
-        .register-link:hover {
+        .login-link:hover {
             text-decoration: underline;
         }
         .flash {
@@ -92,7 +92,7 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="register-container">
         <h1>👨‍🍳 Chef_carthy</h1>
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -106,9 +106,9 @@
             <input type="text" id="username" name="username" required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+            <button type="submit">Register</button>
         </form>
-        <a href="{{ url_for('register') }}" class="register-link">Don't have an account? Register</a>
+        <a href="{{ url_for('login') }}" class="login-link">Already have an account? Login</a>
     </div>
     <div style="text-align:center;color:#666;font-size:1em;margin-top:32px;">
         &copy; {{ current_year }} Chef_carthy. Developed by Maccarthy Quest.

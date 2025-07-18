@@ -1,0 +1,32 @@
+<div class="summary-card">
+  <h3>Market Summary for {{ symbol }}</h3>
+  <ul>
+    <li><strong>Current Price:</strong> {{ current_price }}</li>
+    <li><strong>Sentiment:</strong> {{ overall_sentiment }}</li>
+    <li><strong>Primary Trend:</strong> {{ primary_trend }}</li>
+  </ul>
+</div>
+<style>
+.summary-card {
+  background: #23272e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  max-width: 350px;
+}
+.summary-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #00ff88;
+}
+.summary-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.summary-card li {
+  margin-bottom: 8px;
+}
+</style>

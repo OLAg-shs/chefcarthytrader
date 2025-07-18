@@ -2,138 +2,442 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chef Carthy AI Trading Dashboard</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0e1013;
-            color: #f5f5f5;
+            background: #101214;
+            color: #b0b3b8;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            padding: 0;
         }
-
-        header {
-            background: #12141a;
-            padding: 20px 40px;
+        .sidebar {
+            position: fixed;
+            left: 0; top: 0; bottom: 0;
+            width: 210px;
+            background: #181a1b;
+            padding: 32px 0 0 0;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.13);
+            z-index: 10;
         }
-
-        header h1 {
-            font-size: 24px;
-            color: #00e5ff;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #1c1f26;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        h2 {
-            margin-top: 0;
-            color: #00e5ff;
-        }
-
-        .chart {
-            text-align: center;
-        }
-
-        .chart img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .insight-box {
-            margin-top: 30px;
-            padding: 20px;
-            background: #242830;
-            border-left: 4px solid #00e5ff;
-            border-radius: 10px;
-        }
-
-        .insight-box pre {
-            white-space: pre-wrap;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #d6e1e9;
-        }
-
-        .buttons {
-            margin-top: 30px;
+        .sidebar h2 {
+            color: #19c37d;
+            margin-bottom: 32px;
+            font-size: 1.3em;
             display: flex;
-            gap: 20px;
+            align-items: center;
+            gap: 8px;
         }
-
-        .buttons form {
-            display: inline;
+        .sidebar .socials {
+            margin-top: auto;
+            margin-bottom: 24px;
+            display: flex;
+            gap: 18px;
+            justify-content: center;
         }
-
-        button {
-            background-color: #00e5ff;
-            color: #000;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-            transition: background 0.2s ease-in-out;
+        .sidebar .socials a {
+            color: #19c37d;
+            font-size: 1.6em;
+            transition: color 0.2s;
         }
-
-        button:hover {
-            background-color: #00b3cc;
+        .sidebar .socials a:hover {
+            color: #00ff88;
         }
-
-        footer {
+        .footer {
             text-align: center;
-            color: #888;
-            margin-top: 60px;
-            font-size: 14px;
+            color: #666;
+            font-size: 1em;
+            margin-top: 48px;
+            margin-bottom: 12px;
         }
-
+        .sidebar a {
+            color: #b0b3b8;
+            text-decoration: none;
+            margin: 12px 0;
+            font-size: 1.08em;
+            padding: 8px 24px;
+            border-radius: 6px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background: #19c37d;
+            color: #101214;
+        }
+        .container {
+            margin-left: 230px;
+            max-width: 1100px;
+            padding: 36px 24px 48px 24px;
+        }
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        .dashboard-header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            color: #00ff88;
+            letter-spacing: 1px;
+        }
+        .user-info {
+            background: #22252b;
+            border-radius: 10px;
+            padding: 18px 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        .user-info p {
+            margin: 0 0 8px 0;
+            font-size: 1.08em;
+        }
+        .section-card {
+            background: #23272e;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            padding: 24px 28px 18px 28px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #00ff88;
+            margin-top: 0;
+            font-size: 1.3em;
+            letter-spacing: 0.5px;
+        }
+        .btn {
+            background: linear-gradient(90deg, #00ff88 60%, #00c3ff 100%);
+            color: #181c22;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 18px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn:disabled {
+            background: #444;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+        .btn.danger {
+            background: linear-gradient(90deg, #ff4444 60%, #ff8800 100%);
+            color: #fff;
+        }
+        .btn:hover:not(:disabled) {
+            filter: brightness(1.08);
+        }
+        table {
+            width: 100%;
+            background: #23272e;
+            color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            margin-bottom: 24px;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+        }
+        th {
+            background: #1a1d22;
+            color: #00ff88;
+            font-weight: 600;
+            font-size: 1em;
+        }
+        tr:nth-child(even) {
+            background: #23272e;
+        }
+        tr:nth-child(odd) {
+            background: #20232a;
+        }
+        tr:hover {
+            background: #2a2e38;
+        }
+        .full-analysis-box, .summary-card {
+            background: #23272e;
+            color: #fff;
+            border-radius: 10px;
+            padding: 18px 24px;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            max-width: 700px;
+        }
+        .full-analysis-box h3, .summary-card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #00ff88;
+        }
+        .summary-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .summary-card li {
+            margin-bottom: 8px;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0; top: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.55);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background: #23272e;
+            color: #fff;
+            border-radius: 12px;
+            padding: 32px 32px 24px 32px;
+            max-width: 700px;
+            width: 95vw;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            position: relative;
+        }
+        .modal-content img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            background: #222;
+        }
+        .close {
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .sidebar { display: none; }
+            .container { margin-left: 0; padding: 12px; }
+        }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>📈 AI Trading Dashboard</h1>
-    <form action="/logout" method="GET">
-        <button>Logout</button>
-    </form>
-</header>
-
-<div class="container">
-    <h2>📊 Profit Overview</h2>
-    <div class="chart">
-        <img src="{{ chart_path }}" alt="Profit Chart">
-    </div>
-
-    <h2>🤖 Latest AI Signal</h2>
-    <div class="insight-box">
-        {% if ai_insight %}
-            <pre>{{ ai_insight }}</pre>
-        {% else %}
-            <pre>No signal yet. Press "Start Bot" to run analysis.</pre>
-        {% endif %}
-    </div>
-
-    <div class="buttons">
-        <form action="/start" method="POST">
-            <button type="submit">🚀 Start Bot</button>
-        </form>
+<div class="sidebar">
+    <h2><span role="img" aria-label="chef">👨‍🍳</span> Chef_carthy</h2>
+    <a href="/dashboard" class="active">Dashboard</a>
+    <a href="/settings">Settings</a>
+    <a href="/logout" style="background:#ff4444;color:#fff;">Logout</a>
+    <div class="socials">
+      <a href="https://www.instagram.com/_i_am_quest/" target="_blank" title="Instagram" aria-label="Instagram">
+        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 3.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5Zm5.25.75a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5Z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/maccarthy-quest-329343275/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76s1.75.79 1.75 1.76s-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07c-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.84-1.54c3.04 0 3.6 2 3.6 4.59v5.59z" fill="currentColor"/></svg>
+      </a>
     </div>
 </div>
+<div class="container">
+    <div class="dashboard-header">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="user-info">
+        <div>
+            <p><strong>User:</strong> {{ user.username }}</p>
+            <p><strong>Market:</strong> {{ user.symbol }}</p>
+                    </div>
+        <div>
+            <p><strong>Last Login:</strong> {{ user.last_login.strftime('%Y-%m-%d %H:%M') if user.last_login else 'N/A' }}</p>
+        </div>
+    </div>
 
-<footer>
-    Built by MAccarthy Quest — Smart Trading Assistant
-</footer>
+    {% if not is_admin and user.analysis_preference == 'simple' %}
+    <div class="section-card">
+        <button class="btn" id="summary-btn">Summary Analysis</button>
+        <div id="summary-result"></div>
+    </div>
+    {% endif %}
 
+    {% if is_admin or user.analysis_preference == 'full' %}
+    <div class="section-card">
+        <h2>📈 Get Latest Analysis</h2>
+        <button class="btn" id="full-analysis-btn">Get Full Analysis</button>
+        <div id="full-analysis-result">
+            {% if analysis_history and analysis_history|length > 0 %}
+                <div class="full-analysis-box">
+                    <h3>Latest Full Analysis</h3>
+                    {{ analysis_history[0].analysis_full | replace('\n', '<br>') | safe }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="section-card">
+        <h2>📜 Recent Analysis History</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Entry</th>
+                <th>Stop Loss</th>
+                <th>Take Profit</th>
+                <th>Exp. Loss</th>
+                <th>Exp. Profit</th>
+                <th>Trend</th>
+                <th>View Full</th>
+            </tr>
+            {% for record in analysis_history %}
+            <tr>
+                <td>{{ record.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>{{ record.entry_price if record.entry_price is not none else '-' }}</td>
+                <td>{{ record.stop_loss if record.stop_loss is not none else '-' }}</td>
+                <td>{{ record.take_profit if record.take_profit is not none else '-' }}</td>
+                <td>{{ record.expected_loss if record.expected_loss is not none else '-' }}</td>
+                <td>
+                  {% if record.expected_profit is not none and record.expected_profit == record.expected_profit and record.expected_profit|float != None %}
+                    {{ record.expected_profit|round(2) }}
+                  {% else %}-{% endif %}
+                </td>
+                <td>
+                  {% set trend = (record.simple_trend or record.analysis_primary_trend or '-')|lower %}
+                  {% if 'bullish' in trend or 'uptrend' in trend %}Buy{% elif 'bearish' in trend or 'downtrend' in trend %}Sell{% else %}Not Sure{% endif %}
+                </td>
+                <td><button class="btn view-full-btn" data-index="{{ loop.index0 }}">View Full</button></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    {% if is_admin %}
+    <div class="section-card">
+        <h2>👥 User Management</h2>
+        <div style="margin-bottom:12px;">
+            <strong>Total Users:</strong> {{ total_users }}<br>
+            <strong>Total Analyses Run:</strong> {{ total_analyses_run }}
+        </div>
+        <table>
+            <tr>
+                <th>Username</th><th>Last Login</th><th>Market Symbol</th><th>Analysis Preference</th><th>Role</th><th>Remove</th>
+            </tr>
+            {% for u in all_users %}
+            <tr id="user-row-{{ u.id }}">
+                <td>{{ u.username }}</td>
+                <td>{{ u.last_login.strftime('%Y-%m-%d %H:%M') if u.last_login else 'N/A' }}</td>
+                <td>{{ u.symbol }}</td>
+                <td>{{ u.analysis_preference }}</td>
+                <td>{% if u.is_admin %}<b>Admin</b>{% else %}User{% endif %}</td>
+                <td><button class="btn danger" onclick="removeUser({{ u.id }})">Remove</button></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+</div>
+<div class="footer">
+    &copy; {{ current_year }} Chef_carthy. Developed by Maccarthy Quest.
+</div>
+<!-- Modal for View Full -->
+<div id="fullModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalChart" src="/static/market_chart.png?t={{ current_timestamp }}" alt="Market Chart" />
+    <div id="modalAnalysis"></div>
+  </div>
+</div>
+<script>
+// Only attach for normal users with simple preference
+const summaryBtn = document.getElementById('summary-btn');
+if (summaryBtn) {
+    summaryBtn.addEventListener('click', function() {
+        summaryBtn.disabled = true;
+        summaryBtn.textContent = 'Loading...';
+        fetch('/start_analysis', {
+            method: 'POST',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        })
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('summary-result').innerHTML = html;
+            summaryBtn.disabled = false;
+            summaryBtn.textContent = 'Summary Analysis';
+        })
+        .catch(err => {
+            document.getElementById('summary-result').innerHTML = '<div style="color:#ff4444;">Error loading summary.</div>';
+            summaryBtn.disabled = false;
+            summaryBtn.textContent = 'Summary Analysis';
+        });
+    });
+}
+
+// AJAX for full analysis (admin/full users)
+const fullBtn = document.getElementById('full-analysis-btn');
+if (fullBtn) {
+    fullBtn.addEventListener('click', function() {
+        fullBtn.disabled = true;
+        fullBtn.textContent = 'Loading...';
+        fetch('/start_analysis', {
+            method: 'POST',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.analysis) {
+                let analysis = data.analysis.replace(/\n/g, '<br>');
+                document.getElementById('full-analysis-result').innerHTML =
+                    '<div class="full-analysis-box">' +
+                    '<h3>Latest Full Analysis</h3>' +
+                    analysis +
+                    '</div>';
+                setTimeout(() => window.location.reload(), 700);
+            } else {
+                document.getElementById('full-analysis-result').innerHTML = '<div style="color:#ff4444;">Error loading analysis.</div>';
+            }
+            fullBtn.disabled = false;
+            fullBtn.textContent = 'Get Full Analysis';
+        })
+        .catch(err => {
+            document.getElementById('full-analysis-result').innerHTML = '<div style="color:#ff4444;">Error loading analysis.</div>';
+            fullBtn.disabled = false;
+            fullBtn.textContent = 'Get Full Analysis';
+        });
+    });
+}
+
+// Modal logic for View Full
+const modal = document.getElementById('fullModal');
+const closeModal = document.getElementById('closeModal');
+const modalAnalysis = document.getElementById('modalAnalysis');
+const modalChart = document.getElementById('modalChart');
+const viewFullBtns = document.querySelectorAll('.view-full-btn');
+const analysisData = [
+    {% for record in analysis_history %}
+        {{ record.analysis_full|tojson }},
+    {% endfor %}
+];
+viewFullBtns.forEach((btn, idx) => {
+    btn.addEventListener('click', function() {
+        modal.style.display = 'flex';
+        modalAnalysis.innerHTML = analysisData[idx].replace(/\n/g, '<br>');
+        // Chart is always the latest, but you could extend to show per-analysis chart if you save them
+    });
+});
+closeModal.onclick = function() {
+    modal.style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
 </body>
 </html>

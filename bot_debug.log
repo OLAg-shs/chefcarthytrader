@@ -1,0 +1,697 @@
+2025-07-17 04:30:51,188 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 04:30:51,196 INFO AI Analysis:
+**Market Analysis:**
+
+The XAU/USD (Gold) market is currently in a mixed situation. On one hand, the short-term trend is bullish, indicating that gold prices have been climbing recently. However, the long-term trend is bearish, which suggests that the overall trend is still downward. Additionally, the Trend Strength (ADX) is moderate at 26.22, indicating a strong trend, but not extremely strong.
+
+The momentum indicators are also sending mixed signals. The RSI is neutral at 50.32, while the Stochastic Oscillator is oversold (K=15.60, D=30.35). The MACD Signal is bearish, which is a sign of a potential downward reversal.
+
+Lastly, the Bollinger Bands are lower, indicating lower volatility, while the Band Width is expanding, suggesting increased volatility in the future.
+
+**Potential Trade Setup:**
+
+Considering the mixed signals, I would recommend a conservative trade setup:
+
+* **Entry Point**: Enter a short position when the gold price breaks below the lower Bollinger Band, currently at around 3305.14 (using the ATR to calculate the stop loss).
+* **Stop Loss Level**: Set a stop loss at a level 5-7 ATR above the entry point, which would be approximately 3312.12 (5 ATR) to 3319.29 (7 ATR).
+* **Take Profit Targets**: Set the first take profit target at the previous low point (around 3247.15) and the second target at the 100% Fibonacci extension level (around 3395.82).
+
+**Key Risk Factors to Watch:**
+
+1. **Bullish Breakout**: If the gold price breaks above the upper Bollinger Band (around 3366.50), it could indicate a strong increase in prices, and the trade setup may not be suitable.
+2. **False Breakout**: If the price breaks below the lower Bollinger Band but then returns above it, it could be a false breakout, and the trade setup may not be successful.
+3. **Increased Volatility**: As the Band Width is expanding, increased volatility could lead to larger price movements, making it essential to monitor market conditions closely.
+
+Remember to always use proper risk management techniques, including stop losses, position sizing, and limit orders, to minimize potential losses in the market.
+2025-07-17 04:30:51,197 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'stop_loss': None, 'take_profit': None}
+2025-07-17 04:30:51,213 ERROR Auto-Trade Error: Failed to get symbol info
+2025-07-17 04:30:51,229 INFO 192.168.52.35 - - [17/Jul/2025 04:30:51] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 04:30:51,270 INFO 192.168.52.35 - - [17/Jul/2025 04:30:51] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:30:51,370 INFO 192.168.52.35 - - [17/Jul/2025 04:30:51] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 04:31:05,509 INFO 192.168.52.35 - - [17/Jul/2025 04:31:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-17 04:31:05,530 INFO 192.168.52.35 - - [17/Jul/2025 04:31:05] "GET / HTTP/1.1" 200 -
+2025-07-17 04:31:10,841 INFO 192.168.52.35 - - [17/Jul/2025 04:31:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-17 04:31:10,900 INFO 192.168.52.35 - - [17/Jul/2025 04:31:10] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:31:11,007 INFO 192.168.52.35 - - [17/Jul/2025 04:31:11] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 04:31:17,782 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 04:31:17,785 INFO AI Analysis:
+Market Analysis:
+
+The XAU/USD (Gold) market is currently in a mixed state, with conflicting short-term and long-term trend signals. The short-term trend is bullish, indicating a possible upward movement, while the long-term trend is bearish, implying a potential downward trend. The ADX (Trend Strength) indicator is moderate at 26.22, indicating a strong trend, but not extremely strong.
+
+The RSI (Relative Strength Index) is neutral at 50.32, signaling no strong buying or selling pressure. However, the Stochastic indicator is oversold, which may indicate a potential bounce or reversal. The MACD (Moving Average Convergence Divergence) Signal is bearish, indicating a need to consider the possibility of a downward movement.
+
+Volatility is increasing, as reflected by the expanding Bollinger Bands, which may indicate increased uncertainty in the market.
+
+Given the mixed signals, it's essential to prioritize the most reliable and clear signals. In this case, the oversold Stochastic reading and the expanding Bollinger Bands may indicate a potential short-term bullish reversal.
+
+Potential Trade Setup:
+
+Based on these signals, a potential trade setup could be:
+
+* **Long Entry Point**: 3315.00 (just below the current price)
+* **Stop Loss Level**: 3270.00 (based on the 1x ATR value, calculated from the current price)
+* **Take Profit Targets**: 3385.00 (short-term) and 3440.00 (medium-term)
+
+Key Risk Factors to Watch:
+
+1. **Bullish Reversal**: The Stochastic indicator may continue to rise and cross over the D-line, invalidating the bearish MACD Signal and providing a stronger buy signal.
+2. **Trend Strength**: The ADX indicator may drop below 20, indicating a weakening trend, which could lead to a potential breakout or reversal.
+3. **Volatility**: Increased volatility may lead to rapid price movements, potentially exceeding the calculated stop-loss level.
+
+In summary, based on the mixed market conditions, a potential trade setup involves buying the XAU/USD (Gold) at 3315.00 with a stop-loss at 3270.00 and take profit targets at 3385.00 and 3440.00. However, traders should closely monitor the key risk factors to adjust the trade accordingly.
+2025-07-17 04:31:17,785 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'stop_loss': 3270.0, 'take_profit': 3385.0}
+2025-07-17 04:31:17,800 ERROR Auto-Trade Error: Failed to get symbol info
+2025-07-17 04:31:17,812 INFO 192.168.52.35 - - [17/Jul/2025 04:31:17] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 04:31:17,851 INFO 192.168.52.35 - - [17/Jul/2025 04:31:17] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:31:17,936 INFO 192.168.52.35 - - [17/Jul/2025 04:31:17] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 04:36:41,179 INFO 192.168.52.35 - - [17/Jul/2025 04:36:41] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:36:41,250 INFO 192.168.52.35 - - [17/Jul/2025 04:36:41] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 04:36:46,026 INFO 192.168.52.35 - - [17/Jul/2025 04:36:46] "GET /settings HTTP/1.1" 200 -
+2025-07-17 04:37:00,714 INFO 192.168.52.35 - - [17/Jul/2025 04:37:00] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:37:07,749 INFO 192.168.52.35 - - [17/Jul/2025 04:37:07] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:37:10,266 INFO 192.168.52.35 - - [17/Jul/2025 04:37:10] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2025-07-17 04:37:10,311 INFO 192.168.52.35 - - [17/Jul/2025 04:37:10] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:37:10,397 INFO 192.168.52.35 - - [17/Jul/2025 04:37:10] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 04:37:18,713 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 04:37:18,716 INFO AI Analysis:
+**Market Analysis:**
+The XAU/USD (Gold) market is presenting a mixed picture. On one hand, the short-term trend is bullish, indicating a potential upward movement. However, the long-term trend is bearish, indicating the market may eventually trend downwards.
+
+The ADX (26.11) shows a strong trend in place, which supports the short-term bullish trend. However, the RSI and Stochastic indicators are neutral and oversold, respectively, which may suggest a potential near-term pullback.
+
+**Potential Trade Setup:**
+Based on the analysis, I would recommend a trade setup with a bullish bias:
+
+* **Entry Point:** Look for a buy signal around the current price level (3338.40) as the price breaks above the recent highs.
+* **Stop Loss Level:** Calculate the stop loss level by adding the ATR (9.18) to the entry point. In this case, the stop loss would be around 3347.58 (3338.40 + 9.18).
+* **Take Profit Targets:** Set two targets: one at around 3366.58 (3338.40 + 2 x 9.18) and another at 3384.78 (3338.40 + 3 x 9.18). These targets are based on the Bollinger Bands' expanding width and potential continuation of the short-term trend.
+
+**Key Risk Factors to Watch:**
+
+1. **ADX Deterioration:** If the ADX starts to decline, it may indicate a weakening trend and increased risk.
+2. **Price Reversal:** If the price breaks below the recent lows, it may indicate a decline in the short-term trend.
+3. **Volatility Increase:** If the market experiences a sudden surge in volatility, it may lead to increased risk and potential losses.
+
+In summary, the market is presenting a mixed picture, but the short-term bullish trend and strong ADX suggest a potential upward movement. However, oversold Stochastic and neutral RSI readings caution against overconfidence. A stop loss and take profit strategy can help manage risk, but traders should closely monitor key risk factors to adjust their trade accordingly.
+2025-07-17 04:37:18,716 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'stop_loss': None, 'take_profit': None}
+2025-07-17 04:37:18,730 ERROR Auto-Trade Error: Failed to get symbol info
+2025-07-17 04:37:18,749 INFO 192.168.52.35 - - [17/Jul/2025 04:37:18] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 04:37:18,785 INFO 192.168.52.35 - - [17/Jul/2025 04:37:18] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:37:18,853 INFO 192.168.52.35 - - [17/Jul/2025 04:37:18] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 04:43:38,616 INFO 192.168.52.35 - - [17/Jul/2025 04:43:38] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:43:38,700 INFO 192.168.52.35 - - [17/Jul/2025 04:43:38] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 04:43:42,257 INFO 192.168.52.35 - - [17/Jul/2025 04:43:42] "GET /settings HTTP/1.1" 200 -
+2025-07-17 04:43:52,688 INFO 192.168.52.35 - - [17/Jul/2025 04:43:52] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:43:56,688 INFO 192.168.52.35 - - [17/Jul/2025 04:43:56] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:43:59,608 INFO 192.168.52.35 - - [17/Jul/2025 04:43:59] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:44:01,208 INFO 192.168.52.35 - - [17/Jul/2025 04:44:01] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:44:02,366 INFO 192.168.52.35 - - [17/Jul/2025 04:44:02] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:44:03,753 INFO 192.168.52.35 - - [17/Jul/2025 04:44:03] "POST /test_mt5_connection HTTP/1.1" 200 -
+2025-07-17 04:44:06,231 INFO 192.168.52.35 - - [17/Jul/2025 04:44:06] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2025-07-17 04:44:06,272 INFO 192.168.52.35 - - [17/Jul/2025 04:44:06] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:44:06,341 INFO 192.168.52.35 - - [17/Jul/2025 04:44:06] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 04:44:15,343 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 04:44:15,346 INFO AI Analysis:
+**Market Analysis:**
+
+The XAU/USD (Gold) market is currently in a state of flux. In the short-term, the trend is bullish, indicating that gold prices are likely to rise in the near future. However, the long-term trend is bearish, suggesting that gold prices may eventually drop. The trend strength is moderate, as measured by the ADX indicator.
+
+The current price action is neutral, with the RSI and stochastic indicators at neutral levels. This means that the market is not oversold or overbought, and prices are likely to continue moving sideways or in a narrow range.
+
+The MACD signal line is bearish, indicating that the momentum of gold prices is slowing down or even reversing. This could be a sign that the bulls are losing strength and the bears are gaining momentum.
+
+**Trade Setup:**
+
+Based on the indicators, I would recommend a cautious approach with a potential short-selling setup:
+
+* **Entry Point:** Look for a pullback or a price consolidation in the upper Bollinger Band (around 3375-3385). This could be a sign that the short-term trend is still intact, but the market is also vulnerable to a potential reversal.
+* **Stop Loss Level:** Set your stop loss at the recent swing high (around 3430). This is based on the ATR, which is 9.38, indicating that the price action is likely to make a swing of at least 2-3 ATRs.
+* **Take Profit Targets:** Set your take profit targets at the 50% Fibonacci level (around 3295) and the 61.8% Fibonacci level (around 3240). These levels are based on the recent swing highs and lows, and could serve as potential resistance and support levels.
+
+**Key Risk Factors to Watch:**
+
+1. **Breakout:** If gold prices break out of the upper Bollinger Band, it could indicate a strong continuation of the short-term trend. In this case, it's best to hold the short position and aim for the upper targets.
+2. **Reversal:** If gold prices fail to break out of the upper Bollinger Band and instead start to move downwards, it could indicate a reversal of the short-term trend. In this case, the short position would be at risk of being stopped out.
+3. **Momentum:** Keep an eye on the MACD signal line and the RSI. If either of these indicators start to turn bullish, it could indicate a change in momentum and a potential reversal of the short-term trend.
+
+In summary, the XAU/USD market is currently in a state of flux, with a short-term bullish trend and a long-term bearish trend. The potential trade setup is a cautious short-selling opportunity, with a focus on a potential pullback or consolidation in the upper Bollinger Band. However, key risk factors include a potential breakout or reversal, and a change in momentum.
+2025-07-17 04:44:15,346 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'stop_loss': None, 'take_profit': None}
+2025-07-17 04:44:15,361 ERROR Auto-Trade Error: Failed to get symbol info
+2025-07-17 04:44:15,372 INFO 192.168.52.35 - - [17/Jul/2025 04:44:15] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 04:44:15,412 INFO 192.168.52.35 - - [17/Jul/2025 04:44:15] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:44:15,482 INFO 192.168.52.35 - - [17/Jul/2025 04:44:15] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 04:44:23,845 INFO 192.168.52.35 - - [17/Jul/2025 04:44:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-17 04:44:23,865 INFO 192.168.52.35 - - [17/Jul/2025 04:44:23] "GET / HTTP/1.1" 200 -
+2025-07-17 04:44:29,849 INFO 192.168.52.35 - - [17/Jul/2025 04:44:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-17 04:44:29,892 INFO 192.168.52.35 - - [17/Jul/2025 04:44:29] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:44:29,951 INFO 192.168.52.35 - - [17/Jul/2025 04:44:29] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+
+2025-07-17 04:48:46,367 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\app.py', reloading
+2025-07-17 04:50:39,804 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 04:50:39,812 INFO AI Analysis:
+Let's break down the market conditions for XAU/USD (Gold) into a clear analysis, potential trade setup, and key risk factors to watch.
+
+**Market Analysis:**
+The current price of XAU/USD is around 3341.66, with a short-term bullish trend and a long-term bearish trend. The ADX indicator (26.54) suggests a strong trend, but the RSI is neutral, indicating that the price is not getting overbought or oversold. The stochastic oscillator is showing an oversold condition, which could indicate a potential reversal. The MACD signal is bearish, but the Bollinger Bands are expanding, which could suggest increased volatility.
+
+**In Simple Terms:**
+The market is showing mixed signals. The short-term trend is bullish, but the long-term trend is bearish. The price is oversold, but the MACD signal is bearish. The volatility is increasing, which could lead to more price movement.
+
+**Potential Trade Setup:**
+Based on the analysis, a potential trade setup could be:
+
+* **Entry Point:** Buy at current price (3341.66)
+* **Stop Loss Level:** Set the stop loss around 10-15% below the current price, which would be approximately 2934.89-3074.29 (based on the ATR value of 9.38)
+* **Take Profit Targets:** Target the first take profit around the 50% Fibonacci level (around 3595.33) and the second take profit around the 61.8% Fibonacci level (around 3709.07)
+
+**Key Risk Factors to Watch:**
+
+1. **ADX:** A sudden drop in the ADX value could indicate a weakening trend, which would contradict the buy signal.
+2. **Stochastic:** If the stochastic oscillator starts to move above 50, it could suggest a loss of momentum and a potential reversal.
+3. **Momentum:** A significant increase in the MACD signal could indicate a strong bearish trend, causing the price to drop further.
+
+Please keep in mind that this analysis is based on technical indicators and should not be considered as investment advice. Trading carries risk, and it's essential to consider your individual risk tolerance and market conditions before making any trading decisions.
+2025-07-17 04:50:39,813 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'stop_loss': 10.0, 'take_profit': None}
+2025-07-17 04:50:39,827 ERROR Auto-Trade Error: Failed to get symbol info
+2025-07-17 04:50:39,841 INFO 192.168.52.35 - - [17/Jul/2025 04:50:39] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 04:50:39,880 INFO 192.168.52.35 - - [17/Jul/2025 04:50:39] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 04:50:39,983 INFO 192.168.52.35 - - [17/Jul/2025 04:50:39] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 04:51:51,816 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\app.py', reloading
+2025-07-17 05:25:18,407 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:25:18,417 INFO AI Analysis:
+Here's the analysis:
+
+**Market Analysis:**
+
+The current price of XAU/USD (Gold) is 3338.77, with a relatively low volatility of 9.02. The short-term trend is bullish, indicating that the price is trending upwards in the short term. However, the long-term trend is bearish, suggesting that the overall trend is downwards. The trend strength is weak, with an ADX reading of 24.78.
+
+The momentum indicators are mixed. The RSI is neutral at 48.04, but the Stochastic is oversold, indicating that the price may be due for a bounce. The MACD signal is bearish, suggesting that the price may continue to fall in the short term.
+
+The Bollinger Bands are contracting, indicating that the price is moving closer to its mean, and the bands are widening, suggesting that the price may experience increased volatility.
+
+**Trade Setup:**
+
+Based on the analysis, a potential trade setup is:
+
+* **Entry Point:** 3330.00 (slightly below the current price to avoid market noise)
+* **Stop Loss Level:** 3288.00 (based on the ATR, which is 9.02, adding a buffer for potential price swings)
+* **Take Profit Targets:** 3380.00 (first target, about 50 pips above the entry point) and 3430.00 (second target, about 92 pips above the entry point)
+
+**Key Risk Factors to Watch:**
+
+* A break above the 3410.00 resistance level could indicate a stronger bullish trend
+* A break below the 3270.00 support level could lead to a more severe bearish trend
+* Increased volatility could lead to larger price swings, potentially triggering the stop loss
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3330.00
+Stop Loss: 3288.00
+Take Profit: 3380.00
+2025-07-17 05:25:18,419 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:25:18,435 INFO 192.168.52.35 - - [17/Jul/2025 05:25:18] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:25:18,485 INFO 192.168.52.35 - - [17/Jul/2025 05:25:18] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:25:18,572 INFO 192.168.52.35 - - [17/Jul/2025 05:25:18] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:26:57,974 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:27:18,233 INFO 192.168.52.35 - - [17/Jul/2025 05:27:18] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:27:18,280 INFO 192.168.52.35 - - [17/Jul/2025 05:27:18] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:27:18,376 INFO 192.168.52.35 - - [17/Jul/2025 05:27:18] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:28:30,640 INFO 192.168.52.35 - - [17/Jul/2025 05:28:30] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:28:30,717 INFO 192.168.52.35 - - [17/Jul/2025 05:28:30] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:28:33,773 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:28:51,997 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:28:52,004 INFO AI Analysis:
+**Market Analysis:**
+
+The current price of XAU/USD (Gold) is 3339.74, with a moderate level of volatility (ATR: 9.02). The short-term trend is bullish, but the long-term trend is bearish. The trend strength (ADX) is weak, indicating a lack of conviction in the current trend.
+
+The momentum indicators (RSI, Stochastic, and MACD) are all neutral, suggesting that the market is resting or consolidating. The Bollinger Bands are positioned at the lower end, indicating that the market is below its average price.
+
+Overall, the market is showing signs of uncertainty, with a short-term bullish bias but a lack of confidence in the trend.
+
+**Potential Trade Setup:**
+
+Based on the analysis, a potential trade setup could be:
+
+* Entry Point: Buy at the current price (3339.74)
+* Stop Loss Level: 3323.78 (set 2 ATR zones below the current price, which is 9.02 x 2 = 18.04, below 3321.70)
+* Take Profit Targets:
+	+ First target: 3381.58 (10 pips above the current price)
+	+ Second target: 3424.38 (5 pips above the first target)
+
+**Key Risk Factors to Watch:**
+
+1. Breakout above the current price: If the market breaks above 3339.74, it could indicate a strong bullish trend, validating the short-term trend analysis.
+2. Reversal below the previous low: If the market reverses and breaks below 3310.60, it could signal a stronger bearish trend, invalidating the short-term trend analysis.
+3. Changes in momentum: If the momentum indicators start to show clear bullish or bearish trends, it could signal a stronger trend and influence the trade.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3339.74
+Stop Loss: 3323.78
+Take Profit: 3424.38
+2025-07-17 05:28:52,008 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:28:52,025 INFO 192.168.52.35 - - [17/Jul/2025 05:28:52] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:28:52,187 INFO 192.168.52.35 - - [17/Jul/2025 05:28:52] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:28:52,350 INFO 192.168.52.35 - - [17/Jul/2025 05:28:52] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:31:47,786 INFO 192.168.52.35 - - [17/Jul/2025 05:31:47] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:31:47,876 INFO 192.168.52.35 - - [17/Jul/2025 05:31:47] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:31:51,097 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:32:08,400 INFO 192.168.52.35 - - [17/Jul/2025 05:32:08] "GET / HTTP/1.1" 200 -
+2025-07-17 05:32:12,268 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:32:12,277 INFO AI Analysis:
+**Market Analysis**
+
+The XAU/USD (Gold) market is exhibiting a mixed signals environment. The short-term trend is bullish, indicating a potential upward move. However, the long-term trend is bearish, suggesting a stronger downward trend is present. The ADX indicator shows a weak trend strength, suggesting the current trend may not be sustainable.
+
+The momentum indicators, such as RSI, Stochastic, and MACD, all indicate a neutral or neutral-biased market, neither overly bullish nor bearish. The Bollinger Bands are contracting, indicating a reduction in volatility.
+
+**Trade Setup**
+
+Based on the neutral momentum and weak trend strength, we will focus on a contrarian trade setup, going against the short-term bullish trend. This setup is considered a high-risk, high-reward trade.
+
+**Trade Setup:**
+
+* **Entry Point:** 3331.79 (just below the current price, reflecting the neutral sentiment)
+* **Stop Loss Level:** 3269.67 (based on the ATR, 2 times the average true range of 9.02)
+* **Take Profit Targets:**
+	+ First target: 3421.99 (a 70-pip target, reflecting the short-term bullish trend)
+	+ Second target: 3514.18 (a 173-pip target, considering the long-term bearish trend)
+
+**Key Risk Factors to Watch:**
+
+* A break above 3400.00 could invalidate the trade setup and suggest a stronger uptrend.
+* A close below 3270.00 could confirm the bearish trend and result in significant losses.
+* Volatility increases could widen the Bollinger Bands, increasing the risk of significant price movements.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3331.79
+Stop Loss: 3269.67
+Take Profit: 3421.99, 3514.18
+2025-07-17 05:32:12,284 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:32:12,306 INFO 192.168.52.35 - - [17/Jul/2025 05:32:12] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:32:15,887 INFO 192.168.52.35 - - [17/Jul/2025 05:32:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-17 05:32:16,045 INFO 192.168.52.35 - - [17/Jul/2025 05:32:16] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:32:16,222 INFO 192.168.52.35 - - [17/Jul/2025 05:32:16] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:32:23,471 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:32:23,473 INFO AI Analysis:
+**Market Analysis:**
+
+The market condition for XAU/USD (Gold) suggests a mixed picture. The short-term trend is bullish, indicating a potential upward movement in the near future. However, the long-term trend is bearish, hinting at a stronger downward pressure. The trend strength is weak, as indicated by the ADX, which can be seen as a neutral indicator. The momentum indicators, RSI, Stochastic, and MACD, are neutral, indicating a lack of clear direction.
+
+The volatility, as measured by the ATR, is high, but the Bollinger Bands are contracting, implying a potential for a correction. Overall, the market is experiencing a mixture of conflicting signals, making it challenging to predict a clear direction.
+
+**Potential Trade Setup:**
+
+Based on the analysis, a potential trade setup could be a short-term bullish trade. Here's a possible setup:
+
+* **Entry point:** 3340.81 (current price)
+* **Stop loss level:** 3318.79 (ATR-based, approximately 1.2 ATR below the current price)
+* **Take profit targets:** 3362.83 (short-term target, approximately 22 pips above the current price), 3394.85 (medium-term target, approximately 54 pips above the current price)
+
+**Key Risk Factors to Watch:**
+
+* Breakout above the upper Bollinger Band, indicating a potential trend reversal
+* Reversal below the lower Bollinger Band, indicating a potential trend continuation
+* Violation of the MACD signal line, indicating a potential shift in momentum
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3340.81
+Stop Loss: 3318.79
+Take Profit: 3362.83, 3394.85
+2025-07-17 05:32:23,477 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:32:23,488 INFO 192.168.52.35 - - [17/Jul/2025 05:32:23] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:32:23,530 INFO 192.168.52.35 - - [17/Jul/2025 05:32:23] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:32:23,613 INFO 192.168.52.35 - - [17/Jul/2025 05:32:23] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:33:12,791 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:33:52,716 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:33:52,730 INFO AI Analysis:
+Market Analysis:
+
+The current market condition for XAU/USD (Gold) is a mixed bag. On the one hand, the short-term trend is bullish, indicating a potential upward move. On the other hand, the long-term trend is bearish, suggesting that the strong bearish force could take over again. The ADX indicator shows that the trend strength is weak, making it challenging to predict a clear direction.
+
+The momentum indicators are also sending mixed signals. The RSI is neutral, indicating a lack of strong upward or downward momentum. The Stochastic is oversold, which could lead to a potential bounce, but the MACD signal is bearish, implying that the bears might not give up easily.
+
+The volatility is also expanding, as indicated by the Bollinger Bands, which is a sign of uncertainty in the market. The ATR indicates that the current price movement is relatively volatile, with an ATR of 9.02.
+
+Potential Trade Setup:
+
+Based on the mixed signals, a trade setup could be considered for a potentially bullish day, but with caution and tight stops. Here's a potential trade setup:
+
+* Entry Point: 3350.00 (slightly above the current price to take advantage of potential momentum)
+* Stop Loss Level: 3300.00 (based on ATR, setting a stop loss 2 ATRs below the entry point)
+* Take Profit Targets:
+	+ First target: 3400.00 (10.48 points above the entry point)
+	+ Second target: 3450.00 (10.48 points above the first target)
+
+Key Risk Factors to Watch:
+
+* A break below 3300.00 could indicate a strong bearish force, invalidating the bullish trade setup.
+* A failure to break above 3350.00 could lead to further consolidation or a reversal.
+* Monitoring the ADX and trend strength is crucial to determine if the trend is changing.
+
+TRADE SIGNAL SUMMARY:
+Entry: 3350.00
+Stop Loss: 3300.00
+Take Profit: 3400.00 (first target), 3450.00 (second target)
+2025-07-17 05:33:52,739 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'entry_price': 3350.0, 'stop_loss': 3300.0, 'take_profit': 3400.0}
+2025-07-17 05:33:52,759 ERROR Auto-Trade Error: MT5Trader.calculate_lot_size() takes 3 positional arguments but 4 were given
+2025-07-17 05:33:52,785 INFO 192.168.52.35 - - [17/Jul/2025 05:33:52] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:33:52,840 INFO 192.168.52.35 - - [17/Jul/2025 05:33:52] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:33:52,941 INFO 192.168.52.35 - - [17/Jul/2025 05:33:52] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:35:53,380 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:36:38,739 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:36:38,746 INFO AI Analysis:
+Here's the analysis:
+
+**Market Analysis:**
+The XAU/USD market is currently trading at 3338.63 with a relatively high volatility of 9.03. The short-term trend is bullish, indicating a possible upward momentum. However, the long-term trend is bearish, suggesting that the market may be due for a correction. The MACD signal is bearish, but the RSI and stochastic indicators are showing neutral and oversold readings, respectively. The Bollinger Bands are expanding, indicating rising volatility.
+
+**Recommendation:**
+Considering the mixed signals, we'll focus on the most reliable ones. The short-term bullish trend and the oversold stochastic reading suggest that the price may rebound. Here's a potential trade setup:
+
+**Trade Setup:**
+1. **Entry Point:** 3341.66 (short-term resistance level)
+2. **Stop Loss Level:** 3324.83 (ATR-based stop loss, 2 standard deviations from the entry point)
+3. **Take Profit Targets:**
+	* First target: 3362.51 (initial resistance level)
+	* Second target: 3386.25 (confluence of multiple resistance levels)
+
+**Key Risk Factors to Watch:**
+1. Breakout above the short-term resistance level
+2. Confirmation of the long-term bearish trend
+3. Sudden drop in volatility or a slowdown in the current uptrend
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3341.66
+Stop Loss: 3324.83
+Take Profit: 3362.51, 3386.25
+2025-07-17 05:36:38,749 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:36:38,767 INFO 192.168.52.35 - - [17/Jul/2025 05:36:38] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:36:38,830 INFO 192.168.52.35 - - [17/Jul/2025 05:36:38] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:36:38,899 INFO 192.168.52.35 - - [17/Jul/2025 05:36:38] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:39:36,392 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:40:40,612 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:40:40,619 INFO AI Analysis:
+Here's the analysis:
+
+**Market Analysis:**
+The market conditions suggest a complex and mixed picture for XAU/USD (Gold). While the short-term trend is bullish, the long-term trend is bearish, indicating a potential reversal. The trend strength (ADX) is weak, which can lead to a trend reversal. The momentum indicators (RSI, Stochastic, and MACD) are giving mixed signals, with the MACD being bearish.
+
+**Potential Trade Setup:**
+Based on the analysis, I'm considering a short-term trade setup:
+
+* Entry Point: 3345.00 (above the current price, considering the short-term bullish trend)
+* Stop Loss Level: 3314.42 (based on the ATR of 9.14, this level is about 2 ATRs below the entry point)
+* Take Profit Targets:
+	+ First target: 3380.00 (around 3.5% from the entry point)
+	+ Second target: 3410.00 (around 5.5% from the entry point)
+
+**Key Risk Factors to Watch:**
+1. Confirmation of the short-term bullish trend: A breakout above 3345.00 is necessary to confirm the trade setup.
+2. Reversal of the long-term bearish trend: If the long-term trend strength (ADX) increases, it may indicate a turning point and a potential reversal.
+3. Market volatility: If the market becomes excessively volatile, it may impact the trade setup and require adjustments.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3345.00
+Stop Loss: 3314.42
+Take Profit: 3380.00
+2025-07-17 05:40:40,624 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:40:40,640 INFO 192.168.52.35 - - [17/Jul/2025 05:40:40] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:40:40,683 INFO 192.168.52.35 - - [17/Jul/2025 05:40:40] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:40:40,762 INFO 192.168.52.35 - - [17/Jul/2025 05:40:40] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:42:07,419 INFO 192.168.52.35 - - [17/Jul/2025 05:42:07] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:42:07,503 INFO 192.168.52.35 - - [17/Jul/2025 05:42:07] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:42:09,113 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\mt5_trader.py', reloading
+2025-07-17 05:42:30,119 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:42:30,126 INFO AI Analysis:
+**Market Analysis:**
+
+The current market situation for XAU/USD (Gold) is mixed, with conflicting signals from different indicators. The short-term trend is bullish, indicating a possible upward movement. However, the long-term trend is bearish, suggesting a potential reversal. The ADX trend strength is weak, which adds uncertainty to the market. The momentum indicators, such as RSI, Stochastic, and MACD, are sending mixed signals, with the Stochastic being oversold and the MACD being bearish. The Bollinger Bands are expanding, indicating increasing volatility.
+
+**Trade Setup:**
+
+Considering the conflicting signals, a potential trade setup could be a contrarian approach, focusing on the oversold Stochastic indicator. We can look for a potential bounce off the lower Bollinger Band.
+
+* **Entry Point:** 3346.50 (just above the current price, considering the trend is weak)
+* **Stop Loss Level:** 3272.50 (based on 2 times the ATR, which is 18.28)
+* **Take Profit Targets:**
+	+ First target: 3411.00 (just above the recent high)
+	+ Second target: 3474.50 (near the 200-day moving average)
+
+**Key Risk Factors:**
+
+1. If the price breaks below the lower Bollinger Band, it could lead to further losses.
+2. The increasing volatility could make the trade more unpredictable.
+3. The long-term bearish trend may resume, which could negate the short-term bullish move.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3346.50
+Stop Loss: 3272.50
+Take Profit: 3411.00
+2025-07-17 05:42:30,132 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:42:30,156 INFO 192.168.52.35 - - [17/Jul/2025 05:42:30] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:42:30,220 INFO 192.168.52.35 - - [17/Jul/2025 05:42:30] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:42:30,311 INFO 192.168.52.35 - - [17/Jul/2025 05:42:30] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:43:58,592 INFO 192.168.52.35 - - [17/Jul/2025 05:43:58] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:43:58,666 INFO 192.168.52.35 - - [17/Jul/2025 05:43:58] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:44:00,568 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\mt5_trader.py', reloading
+2025-07-17 05:44:20,765 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:44:20,771 INFO AI Analysis:
+Based on the technical indicators, here's a clear market analysis in simple terms:
+
+The XAU/USD (Gold) market is currently in a state of chaos, with conflicting signals from different indicators. The price is trading near a key level, and the trend is weakly bullish in the short-term, but bearish in the long-term. This suggests that the market is due for a breakout or a reversal.
+
+The momentum indicators, such as RSI and Stochastic, are suggesting that the market is oversold, which could be a sign of a potential reversal. The MACD signal is bearish, indicating that the short-term trend is downwards.
+
+The volatility indicators, such as ATR and Bollinger Bands, are suggesting that the market is highly volatile, with expanding band widths.
+
+Based on these indicators, here's a potential trade setup:
+
+**Long Entry Point:** Look for a breakout above the current price (3337.47) with a target of at least 3350.00.
+
+**Stop Loss Level:** 3315.00 (using ATR as a guide, which is approximately 2x the current ATR value of 9.17).
+
+**Take Profit Targets:** 3375.00 and 3425.00.
+
+Key risk factors to watch:
+
+1. A strong rejection at the current price level could indicate a reversal.
+2. A breakout above the current price level without a confirmation from other indicators could be a fake out.
+3. Increased volatility could lead to a range-bound market.
+
+TRADE SIGNAL SUMMARY:
+Entry: 3350.00
+Stop Loss: 3315.00
+Take Profit: 3425.00
+2025-07-17 05:44:20,776 INFO Extracted Trade Params: {'should_trade': True, 'trade_type': 'buy', 'entry_price': 3350.0, 'stop_loss': 3315.0, 'take_profit': 3425.0}
+2025-07-17 05:44:20,794 ERROR Auto-Trade Error: Trade failed for XAUUSDm (buy 0.01): (1, 'Success') (Comment: AutoTrading disabled by client) (Request: TradeRequest(action=1, magic=234000, order=0, symbol='XAUUSDm', volume=0.01, price=3337.24, stoplimit=0.0, sl=3315.0, tp=3425.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='AI Trading Bot', position=0, position_by=0))
+2025-07-17 05:44:20,811 INFO 192.168.52.35 - - [17/Jul/2025 05:44:20] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:44:20,861 INFO 192.168.52.35 - - [17/Jul/2025 05:44:20] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:44:21,041 INFO 192.168.52.35 - - [17/Jul/2025 05:44:21] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:45:38,146 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:45:38,149 INFO AI Analysis:
+Based on the market conditions, here is the analysis and trade setup:
+
+**Market Analysis**
+
+The current market condition for XAU/USD (Gold) is neutral, with conflicting signals from different indicators. The short-term trend is bullish, indicating an upward momentum in the short term. However, the long-term trend is bearish, suggesting a potential reversal in the near future. The ADX is currently weak, which indicates that the trend strength is not strong. The RSI and Stochastic indicators are neutral and oversold, respectively, which could indicate a potential rebound. The MACD signal is bearish, indicating a potential downward movement. The Bollinger Bands are contracting, which could lead to increased volatility.
+
+**Trade Setup**
+
+Given the neutral market condition, I would recommend a conservative trade setup:
+
+* Entry Point: 3328.86 (a support level based on the Bollinger Bands)
+* Stop Loss Level: 3274.80 (based on the ATR of 9.17, which would be a 2.5% move away from the entry point)
+* Take Profit Targets:
+	+ 3391.30 (a resistance level based on the Bollinger Bands)
+	+ 3419.15 (a potential extension of the short-term bullish trend)
+
+**Key Risk Factors to Watch**
+
+1. Breakout above the upper Bollinger Band, which could lead to a strong upward movement.
+2. Reversal of the short-term trend, which could lead to a sharp downward movement.
+3. Lack of confirmation from additional indicators, which could lead to a whipsaw trade.
+
+**TRADE SIGNAL SUMMARY**
+Entry: 3328.86
+Stop Loss: 3274.80
+Take Profit: 3391.30
+2025-07-17 05:45:38,154 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:45:38,174 INFO 192.168.52.35 - - [17/Jul/2025 05:45:38] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:45:38,220 INFO 192.168.52.35 - - [17/Jul/2025 05:45:38] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:45:38,313 INFO 192.168.52.35 - - [17/Jul/2025 05:45:38] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:46:33,364 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\mt5_trader.py', reloading
+2025-07-17 05:48:55,880 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:48:55,891 INFO AI Analysis:
+Based on the market conditions, here's the analysis:
+
+**Market Analysis:**
+The market is currently showing mixed signals. On the one hand, the short-term trend is bullish, indicating that the price is moving upwards in the short-term. The RSI and Stochastic indicators suggest that the market is neutral, which means that the price is not overbought or oversold. The MACD signal is bearish, indicating that there is a potential reversal on the horizon.
+
+On the other hand, the long-term trend is bearish, indicating that the price is moving downwards in the long-term. The ADX indicator shows a weak trend strength, which suggests that the current trend is fragile and may not last.
+
+**Potential Trade Setup:**
+Considering the mixed signals, a potential trade setup could be a long position with a buy stop above the current price. Since the RSI and Stochastic indicators are neutral, the risk is relatively low. However, the MACD signal is bearish, so it's essential to set a stop loss below the recent lows to limit potential losses.
+
+**Trade Setup:**
+Entry point: 3356.00 (just above the current price)
+Stop loss level: 3317.00 (based on ATR, 2 x 9.21)
+Take profit targets: 3380.00, 3420.00
+
+**Key Risk Factors to Watch:**
+1. A break below the stop loss level could indicate a reversal of the short-term trend, and traders should consider reducing their long position or closing it altogether.
+2. A move above the Bollinger Bands could signal a resumption of the long-term trend, and traders should consider taking a long position or increasing their exposure.
+3. The MACD signal could continue to indicate a reversal, and traders should monitor the indicator for any changes in its direction.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3356.00
+Stop Loss: 3317.00
+Take Profit: 3380.00, 3420.00
+2025-07-17 05:48:55,901 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:48:55,927 INFO 192.168.52.35 - - [17/Jul/2025 05:48:55] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:48:56,038 INFO 192.168.52.35 - - [17/Jul/2025 05:48:56] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:48:56,144 INFO 192.168.52.35 - - [17/Jul/2025 05:48:56] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:51:48,002 INFO 192.168.52.35 - - [17/Jul/2025 05:51:48] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:51:48,088 INFO 192.168.52.35 - - [17/Jul/2025 05:51:48] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:51:53,106 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:52:20,778 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:52:20,786 INFO AI Analysis:
+Here's my analysis of the XAU/USD (Gold) market conditions:
+
+**Market Analysis:**
+The current market situation for Gold is quite mixed. In the short term, the price is in a bullish trend, but the long-term trend is bearish. This could indicate a trend reversal in the short term, but a continuation of the bearish trend in the long term. The trend strength is considered weak, which suggests that the trend is not very strong. The momentum indicators suggest a neutral RSI and oversold stochastic, which could mean that the price is due for a bounce. The Bollinger Bands are contracting, which can be a bullish sign. Overall, it's a decent setup for a potential trade, but we need to be cautious due to the mixed short-term and long-term trends and the weak trend strength.
+
+**Potential Trade Setup:**
+Considering the oversold stochastic and the potential for a bounce, we could look to enter a long trade. Here's a potential trade setup:
+
+* **Entry Point:** 3330.00 (just below the current price)
+* **Stop Loss Level:** 3322.00 (around 16 ATR below the entry point)
+* **Take Profit Targets:** 3355.00 and 3380.00 (around 25.5 and 40 points above the entry point)
+
+**Key Risk Factors to Watch:**
+
+* A strong bearish move could reverse the short-term trend and send the price back down.
+* If the trend strength continues to weaken, the trade could lose momentum.
+* The long-term bearish trend could continue, invalidating the short-term bullish trend.
+* A break above the upper Bollinger Band could indicate a more significant trend reversal.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3330.00
+Stop Loss: 3322.00
+Take Profit: 3355.00, 3380.00
+2025-07-17 05:52:20,791 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:52:20,814 INFO 192.168.52.35 - - [17/Jul/2025 05:52:20] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:52:20,874 INFO 192.168.52.35 - - [17/Jul/2025 05:52:20] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:52:20,976 INFO 192.168.52.35 - - [17/Jul/2025 05:52:20] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 05:56:00,865 INFO 192.168.52.35 - - [17/Jul/2025 05:56:00] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:56:00,949 INFO 192.168.52.35 - - [17/Jul/2025 05:56:00] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 05:56:01,133 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
+2025-07-17 05:56:19,832 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 05:56:19,841 INFO AI Analysis:
+**Market Analysis:**
+
+The XAU/USD (Gold) market is currently in a state of mixed signals. The short-term trend is bullish, indicating a potential upward movement in the short run. However, the long-term trend is bearish, suggesting that the trend may reverse in the long run. The ADX (Trend Strength) indicator is weak, indicating a lack of strong momentum.
+
+The RSI (Relative Strength Index) is neutral, suggesting that the market is not oversold or overbought. The Stochastic Oscillator is oversold, indicating that the market might be due for a bounce. The MACD (Moving Average Convergence Divergence) is bearish, indicating a potential downward movement.
+
+The Bollinger Bands are contracting and in a lower position, indicating a potential breakout. The expanding band width suggests that the volatility is increasing.
+
+**Trade Setup:**
+
+With these mixed signals, it's difficult to pinpoint a clear trade setup. However, based on the oversold Stochastic Oscillator and the potential breakout from the contracting Bollinger Bands, a potential trade setup could be:
+
+* **Entry Point:** 3350.00 (above the upper Bollinger Band)
+* **Stop Loss Level:** 3280.00 (based on the ATR of 9.21)
+* **Take Profit Targets:** 3400.00, 3450.00
+
+**Key Risk Factors to Watch:**
+
+* A strong breakout above the upper Bollinger Band could trigger a further upward movement.
+* A failure to break above the upper Bollinger Band could result in a reversal.
+* A potential downward movement could occur if the market fails to break above the resistance level.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3350.00
+Stop Loss: 3280.00
+Take Profit: 3400.00, 3450.00
+2025-07-17 05:56:19,847 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 05:56:19,867 INFO 192.168.52.35 - - [17/Jul/2025 05:56:19] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 05:56:20,050 INFO 192.168.52.35 - - [17/Jul/2025 05:56:20] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 05:56:20,245 INFO 192.168.52.35 - - [17/Jul/2025 05:56:20] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 06:43:05,229 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 06:43:05,245 INFO AI Analysis:
+Here's the analysis:
+
+**Market Analysis:**
+The market is showing mixed signals, which is common in gold prices. The short-term trend is bullish, indicating an uptrend in the recent past. However, the long-term trend is bearish, suggesting a potential downtrend in the longer-term perspective. The trend strength is weak, according to the ADX indicator, which could lead to indecisive price action. The momentum indicators are mixed, with the RSI indicating a neutral reading, while the stochastic is oversold, and the MACD is bearish. The Bollinger Bands are contracting, indicating lower volatility.
+
+**Potential Trade Setup:**
+Based on the mix of signals, a potential trade setup could be a short-term bullish trade with a lower profit target.
+
+* **Entry Point:** 3335.50 (just above the current price)
+* **Stop Loss Level:** 3293.50 (based on the ATR of 9.63, about 36 pips below the entry point)
+* **Take Profit Target:** 3365.50 (about 30 pips above the entry point)
+
+**Key Risk Factors to Watch:**
+1. A breakdown below 3293.50 could indicate a resumption of the bearish trend.
+2. A failure to break above 3365.50 could lead to a further consolidation.
+3. Any significant news or events that affect gold prices, such as changes in global economic policies or interest rates, could impact the trade.
+
+**TRADE SIGNAL SUMMARY:**
+Entry: 3335.50
+Stop Loss: 3293.50
+Take Profit: 3365.50
+2025-07-17 06:43:05,252 INFO Extracted Trade Params: {'should_trade': False, 'trade_type': None, 'entry_price': None, 'stop_loss': None, 'take_profit': None}
+2025-07-17 06:43:05,283 INFO 192.168.52.35 - - [17/Jul/2025 06:43:05] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 06:43:05,557 INFO 192.168.52.35 - - [17/Jul/2025 06:43:05] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 06:43:05,854 INFO 192.168.52.35 - - [17/Jul/2025 06:43:05] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 06:46:17,804 INFO 192.168.52.35 - - [17/Jul/2025 06:46:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-17 06:46:17,849 INFO 192.168.52.35 - - [17/Jul/2025 06:46:17] "GET / HTTP/1.1" 200 -
+2025-07-17 06:46:20,023 INFO 192.168.52.35 - - [17/Jul/2025 06:46:20] "GET /register HTTP/1.1" 200 -
+2025-07-17 06:46:27,330 INFO 192.168.52.35 - - [17/Jul/2025 06:46:27] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-07-17 06:46:27,349 INFO 192.168.52.35 - - [17/Jul/2025 06:46:27] "GET / HTTP/1.1" 200 -
+2025-07-17 06:46:34,425 INFO 192.168.52.35 - - [17/Jul/2025 06:46:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-17 06:46:34,466 INFO 192.168.52.35 - - [17/Jul/2025 06:46:34] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 06:46:34,603 INFO 192.168.52.35 - - [17/Jul/2025 06:46:34] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 06:46:45,430 INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 06:46:45,436 INFO AI Analysis:
+**Market Analysis:**
+
+The XAU/USD is currently trading at 3329.48. Looking at the trend analysis, we see that the short-term trend is bullish, while the long-term trend is bearish. This mixed signal suggests that the market is currently trending upwards in the short-term, but has an overall bearish bias. The ADX indicator shows a weak trend strength, indicating that the trend is not strong enough to continue for a long time.
+
+The momentum indicators are also mixed, with the RSI indicating a neutral reading, while the Stochastic indicator suggests that the market is oversold. This could be a sign that the market is due for a bounce or a correction. The MACD signal is bearish, indicating a potential reversal.
+
+In terms of volatility, the Bollinger Bands are positioned lower, indicating a period of low volatility. The band width is expanding, which could indicate increased volatility in the future.
+
+**Trade Setup:**
+
+Based on these indicators, a potential trade setup could be a long trade with the following parameters:
+
+* Entry point: 3325.00 (just below the current price)
+* Stop loss level: 3295.00 (based on the ATR, which is 9.63)
+* Take profit targets: 3365.00 (50 pip target) and 3400.00 (100 pip target)
+
+**Key Risk Factors to Watch:**
+
+1. A break below the short-term trend line could indicate a reversal of the short-term trend.
+2. A further increase in volatility could result in a large price movement, which could affect the trade.
+3. A strong bearish signal from the MACD could indicate a reversal of the trend.
+
+**TRADE SIGNAL SUMMARY:**
+
+TRADE SIGNAL SUMMARY:
+Entry: 3325.00
+Stop Loss: 3295.00
+Take Profit: 3365.00, 3400.00
+2025-07-17 06:46:45,471 INFO 192.168.52.35 - - [17/Jul/2025 06:46:45] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 06:46:45,506 INFO 192.168.52.35 - - [17/Jul/2025 06:46:45] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 06:46:45,889 INFO 192.168.52.35 - - [17/Jul/2025 06:46:45] "GET /static/market_chart.png HTTP/1.1" 200 -
+2025-07-17 07:19:30,596 INFO 192.168.52.35 - - [17/Jul/2025 07:19:30] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 07:19:30,718 INFO 192.168.52.35 - - [17/Jul/2025 07:19:30] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 07:19:44,768 INFO 192.168.52.35 - - [17/Jul/2025 07:19:44] "GET /settings HTTP/1.1" 200 -
+2025-07-17 07:20:02,130 INFO 192.168.52.35 - - [17/Jul/2025 07:20:02] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 07:20:02,274 INFO 192.168.52.35 - - [17/Jul/2025 07:20:02] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-17 07:21:18,928 INFO 192.168.52.35 - - [17/Jul/2025 07:21:18] "[32mPOST /start HTTP/1.1[0m" 302 -
+2025-07-17 07:21:18,969 INFO 192.168.52.35 - - [17/Jul/2025 07:21:18] "GET /dashboard HTTP/1.1" 200 -
+2025-07-17 07:21:19,159 INFO 192.168.52.35 - - [17/Jul/2025 07:21:19] "[36mGET /static/market_chart.png HTTP/1.1[0m" 304 -
+2025-07-18 02:10:39,923 INFO  * Detected change in 'C:\\Users\\MCN\\Downloads\\My Trade Bot\\utils\\trading_bot.py', reloading
